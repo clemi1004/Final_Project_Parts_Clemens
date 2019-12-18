@@ -23,7 +23,7 @@
             	<div class="col-md-6 mx-auto">
                 	<div class="card border-secondary">
                     	<div class="background_settings card-header">
-                    		<img src="https://secure.meetupstatic.com/photos/event/c/2/7/b/600_481729787.jpeg" id="icon" alt="Please Log In"/>
+                    		<img src="https://secure.meetupstatic.com/photos/event/c/2/7/b/600_481729787.jpeg" id="icon" alt="Codefactory"/>
                         	<h3 class="mb-0 my-2">Please sign up for Codefactory</h3>
                     	</div>
                     <div class="card-body">
