@@ -41,8 +41,7 @@
 
 .input-group {
   position: relative;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
   .input-group input {
     position: relative;
     height: 80px;

@@ -14,9 +14,11 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Symbols -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Own JS -->
-	<script type="text/javascript" src ="check_out_2.js"></script>
 	<title>Check Out 2</title>
+    <!-- PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <!-- Own JS -->
+    <script type="text/javascript" src ="check_out_2.js"></script>
 </head>
 <body>
 
@@ -52,7 +54,21 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <div class="input-group"> <input type="text" name="Name" placeholder="John Doe"> <label>Name</label> </div>
+                            <div class="input-group"> <input id="name2" type="text" name="Name" placeholder="John Doe"> <label>Name</label> </div>
+                            <div class="input-group"> <input id="adress2" type="text" name="Adress" placeholder="Kettenbrückengasse 23/2/12"> <label>Adress</label></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="input-group"><input id="city2" type="text" name="City" placeholder="Vienna"><label>City</label></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="input-group"><input id="zipcode2" type="text" name="zip_code" placeholder="1010" minlength="4" maxlength="4"><label>Zip Code</label> </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="input-group"><input id="country2" type="text" name="country" placeholder="Austria"><label>Country</label></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -74,7 +90,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-12">
-                        	<button class="col-md-12 btn btn-pay placeicon" onclick="location.href='check_out_3.php'" type="button">PAY 100 EURO NOW</button>
+                        	<button class="col-md-12 btn btn-pay placeicon" onclick="printPDF()" type="button">PAY 100 EURO NOW</button>
                         </div>
                     </div>
                 </form>
@@ -82,5 +98,6 @@
         </div>
     </div>
 </div>
+<!-- <a href="javascript:printPDF()">Download PDF</a> -->
 </body>
 </html>
